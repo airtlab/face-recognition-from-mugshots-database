@@ -1,0 +1,4 @@
+Sex:F
+Age:21
+
+Video2: bandana
