@@ -20,7 +20,7 @@ The mugshots were collected by taking pictures from 7 angles on the horizontal p
 
 Specifically, on the horizontal plane, the pictures were taken from -135° to +135°, with a step of 45° (with 0° being in front of the subject). On the vertical plane, the pictures were taken from from -30° to +60° (with 0° being the camera on the plane of the subject's eyes) with a 30° step.
 
-The name of the mugshots identifies the point of view of the acquisition. Specifically, for each subject, the mugshot is named “Img_XY.jpg”, where X is an index which represents the angle on the horizontal plane (from 0 = -135° to 6 = +135°. An increment of the index corresponds to +45°) and Y on the vertical plane (from 1 = +60° to 4 = -30°. An increment of the inxed corresponds to -30°). The following image summarizes the naming convention used for the mugshots file.
+The name of the mugshots identifies the point of view of the acquisition. Specifically, for each subject, the mugshot is named “Img_XY.jpg”, where X is an index which represents the angle on the horizontal plane (from 0 = -135° to 6 = +135°. An increment of the index corresponds to +45°) and Y on the vertical plane (from 1 = +60° to 4 = -30°. An increment of the inxed corresponds to -30°). The following image summarizes the naming convention used for the mugshot files.
 
 ![Sample of the mugshots available in the FRMDB](images/mugshots.gif)
 
@@ -69,7 +69,7 @@ The database is structured as follows.
 	          .
 	       	  └─ 039 (5 .png images)
 
-The “[original](frmdb/original)” directory includes the database files as they were collected. Ir is divided into 39 directories, one for each subject in the database. A subject is identified by a 3 figures code (from “001” to “039”). A subject directory includes:
+The “[original](frmdb/original)” directory includes the database files as they were collected. It is divided into 39 directories, one for each subject in the database. A subject is identified by a 3 figures code (from “001” to “039”). A subject directory includes:
 -  A “XYZ_Mugshots” directory, where XYZ is the subject code. Such directory contains the 28 mugshots of each subject.
 -  A “XYZ_Videos” directory, where XYZ is the subject code. Such directory contains
     - A “XYZ_Video1” directory with the 5 videos of the surveillance cameras and their mosaic.
