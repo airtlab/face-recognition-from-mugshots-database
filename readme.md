@@ -88,4 +88,4 @@ The “[cropped](frmdb/cropped)” includes the mugshots and the faces from the 
 
 The dataset is freely released for research and educational purposes.
 
-If you need to provide examples of the dataset in your paper you can use the pictures of subject 030 or subject 031. To publish other pictures from the dataset in your paper, you must ask the permission to the authors.
+If you need to provide examples of the dataset in your paper you can use the pictures of subject 031 or subject 032. To publish other pictures from the dataset in your paper, you must ask the permission to the authors.
