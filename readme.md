@@ -4,9 +4,9 @@ This repository contains the Face Recognition from Mugshots Database (FRMDB), a 
 
 The FRMDB has been used in the experiments presented in the paper
 
-> P. Contardo, P. Sernani, S. Tomassini, N. Falcionelli, M. Martarelli, P. Castellini, A.F. Dragoni, *The Face Recognition from Mugshots Database: a Dataset to Test the Use of Mugshots from Multiple Points of View for Identification*.
+> Contardo, P.; Sernani, P.; Tomassini, S.; Falcionelli, N.; Martarelli, M.; Castellini, P.; Dragoni, A.F. FRMDB: Face Recognition Using Multiple Points of View. Sensors 2023, 23, 1939. <https://doi.org/10.3390/s23041939>
 
-The paper is currently under review for the publication in the [Sensors](https://www.mdpi.com/journal/sensors) journal.
+The paper is published in the special issue [Biometric Recognition System Based on Iris, Fingerprint and Face](https://www.mdpi.com/journal/sensors/special_issues/5ZH0DZ8318) of  the [Sensors](https://www.mdpi.com/journal/sensors) journal. The paper is open access and available here: <https://www.mdpi.com/1424-8220/23/4/1939>
 
 ## Data Description
 
@@ -86,6 +86,25 @@ The “[cropped](frmdb/cropped)” includes the mugshots and the faces from the 
 
 ## Dataset Release Agreement
 
-The dataset is freely released for research and educational purposes.
+The FRMDB is freely released for research and educational purposes.
 
 If you need to provide examples of the dataset in your paper you can use the pictures of subject 031 or subject 032. To publish other pictures from the dataset in your paper, you must ask the permission to the authors.
+
+Please cite as
+- Contardo, P.; Sernani, P.; Tomassini, S.; Falcionelli, N.; Martarelli, M.; Castellini, P.; Dragoni, A.F. FRMDB: Face Recognition Using Multiple Points of View. Sensors 2023, 23, 1939. <https://doi.org/10.3390/s23041939>
+ 
+Bibtex entry:
+
+	 @article{Contardo2023,
+	   author = {Contardo, Paolo and Sernani, Paolo and Tomassini, Selene and Falcionelli, Nicola and Martarelli, Milena and Castellini, Paolo and Dragoni, Aldo Franco},
+	   title = {{FRMDB}: Face Recognition Using Multiple Points of View},
+	   journal = {Sensors},
+	   volume = {23},
+	   year = {2023},
+	   number = {4},
+	   article-number = {1939},
+	   doi = {10.3390/s23041939}
+	 }
+
+
+The paper is open access and available here: <https://www.mdpi.com/1424-8220/23/4/1939>
