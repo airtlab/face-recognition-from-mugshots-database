@@ -6,11 +6,11 @@ The first FRMDB upload, composed of 39 subjects (17 females and 22 males), has b
 
 > Contardo, P.; Sernani, P.; Tomassini, S.; Falcionelli, N.; Martarelli, M.; Castellini, P.; Dragoni, A.F. FRMDB: Face Recognition Using Multiple Points of View. Sensors 2023, 23, 1939. <https://doi.org/10.3390/s23041939>
 
+The paper is published in the special issue [Biometric Recognition System Based on Iris, Fingerprint and Face](https://www.mdpi.com/journal/sensors/special_issues/5ZH0DZ8318) of  the [Sensors](https://www.mdpi.com/journal/sensors) journal. The paper is open access and available here: <https://www.mdpi.com/1424-8220/23/4/1939>
+
 The 28 subjects (14 males, 14 females) included in the FRMDB update (40-67), have been used in the experiments presented in the paper
 
 > P. Contardo, N. Rossini, S. Tomassini, N. Falcionelli, A. F. Dragoni, and P. Sernani, “Evaluating deep neural networks for face recognition with different subsets of mugshots from the photo-signaling procedure,” in 2023 IEEE International Conference on Metrology for Extended Reality, Artificial Intelligence and Neural Engineering (MetroXRAINE), 2023, pp. 543–548.
-
-The paper is published in the special issue [Biometric Recognition System Based on Iris, Fingerprint and Face](https://www.mdpi.com/journal/sensors/special_issues/5ZH0DZ8318) of  the [Sensors](https://www.mdpi.com/journal/sensors) journal. The paper is open access and available here: <https://www.mdpi.com/1424-8220/23/4/1939>
 
 ## Data Description
 
