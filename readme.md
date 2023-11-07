@@ -1,18 +1,20 @@
 # The Face Recognition from Mugshots Database (FRMDB)
 
-This repository contains the Face Recognition from Mugshots Database (FRMDB), a dataset composed of mugshot images and surveillance videos of 39 subjects. The database can be used for face recognition experiments aiming to evaluate the verification and identification performance in surveillance videos when mugshots from difference Points of View (POVs) are available as reference images.
+This repository contains the Face Recognition from Mugshots Database (FRMDB), a dataset composed of mugshot images and surveillance videos of 67 subjects. The database can be used for face recognition experiments aiming to evaluate the verification and identification performance in surveillance videos when mugshots from difference Points of View (POVs) are available as reference images.
 
-The FRMDB has been used in the experiments presented in the paper
+The first FRMDB upload, composed of 39 subjects (17 females and 22 males), has been used in the experiments presented in the paper
 
 > Contardo, P.; Sernani, P.; Tomassini, S.; Falcionelli, N.; Martarelli, M.; Castellini, P.; Dragoni, A.F. FRMDB: Face Recognition Using Multiple Points of View. Sensors 2023, 23, 1939. <https://doi.org/10.3390/s23041939>
+
+The 28 subjects (14 males, 14 females) included in the FRMDB update (40-67), have been used in the experiments presented in the paper
+
+> P. Contardo, N. Rossini, S. Tomassini, N. Falcionelli, A. F. Dragoni, and P. Sernani, “Evaluating deep neural networks for face recognition with different subsets of mugshots from the photo-signaling procedure,” in 2023 IEEE International Conference on Metrology for Extended Reality, Artificial Intelligence and Neural Engineering (MetroXRAINE), 2023, pp. 543–548.
 
 The paper is published in the special issue [Biometric Recognition System Based on Iris, Fingerprint and Face](https://www.mdpi.com/journal/sensors/special_issues/5ZH0DZ8318) of  the [Sensors](https://www.mdpi.com/journal/sensors) journal. The paper is open access and available here: <https://www.mdpi.com/1424-8220/23/4/1939>
 
 ## Data Description
 
-The Face Recognition from Mugshots Database (FRMDB) includes 39 subjects, 17 females and 22 males. The average age is 24.6, with the youngest individual being 19 years old, and the oldest 52 years old. For each subject, the dataset includes:
--  28 mugshots, i.e., 28 color pictures taken from different points of views with the subject posing during the acquisition. The mugshots are 972x544 JPEG images.
--  5 surveillance cameras videos, taken from 5 points of views. In addition, a mosaic video including all the 5 clips at the same time is available. The videos are encoded with the H.264 codec (the container format is Matroska) and recorded at 60 fps. The frame size is 352x288 pixels for the surveillance videos, whereas the size of the mosaic including all the 5 clips is 1280x720 pixels.
+The Face Recognition from Mugshots Database (FRMDB) includes 67 subjects, 31 females and 36 males. For each subject, the dataset includes 28 mugshots, i.e., 28 color pictures taken from different points of views with the subject posing during the acquisition. The mugshots are 972x544 JPEG images. Then, for the first 39 subjects (001-039) there are 5 surveillance cameras videos, taken from 5 points of views. In addition, a mosaic video including all the 5 clips at the same time is available. The videos are encoded with the H.264 codec (the container format is Matroska) and recorded at 60 fps. The frame size is 352x288 pixels for the surveillance videos, whereas the size of the mosaic including all the 5 clips is 1280x720 pixels. For the last 28 subjects (040 - 067) there are 3 high definition surveillance cameras videos, taken from 3 points of views.  The videos are encoded with the H.264 codec (the container format is MPEG Transport System - .mts) and recorded at 25 fps. The frame size is 1920x108 pixels
 
 The mugshots were collected by taking pictures from 7 angles on the horizontal plane and 4 angles on the vertical plane with four cameras placed on a rotating arm. The following image shows the points of view from which the mugshots were taken
 
@@ -24,7 +26,7 @@ The name of the mugshots identifies the point of view of the acquisition. Specif
 
 ![Sample of the mugshots available in the FRMDB](images/mugshots.gif)
 
-The videos of each subject are named “yyyy-mm-dd hh-mm-ss-CamX.mkv” using the timestamp corresponding to the start of the video (year-month-day hour-minutes-seconds) and an X index representing the camera which recorded the video (from 1 to 5).
+The videos of each subject are named “yyyy-mm-dd hh-mm-ss-CamX.mkv” and “yyyy-mm-dd CamX.mts”using the timestamp corresponding to the start of the video (year-month-day hour-minutes-seconds) and an X index representing the camera which recorded the video (from 1 to 5).
 
 The database is structured as follows.
 
@@ -60,16 +62,16 @@ The database is structured as follows.
 	      │	  .
 	      │   .
 	      │   .
-	      │	  └─ 039 (28 .png images)
+	      │	  └─ 067 (28 .png images)
 	      └─ surveillance
 	          ├─ 001 (5 .png images)
 	          ├─ 002 (5 .png images)
 	       	  .
 	          .
 	          .
-	       	  └─ 039 (5 .png images)
+	       	  └─ 067 (3 .png images)
 
-The “[original](frmdb/original)” directory includes the database files as they were collected. It is divided into 39 directories, one for each subject in the database. A subject is identified by a 3 figures code (from “001” to “039”). A subject directory includes:
+The “[original](frmdb/original)” directory includes the database files as they were collected for the first 39 subhect. It is divided into 39 directories, one for each subject in the database. A subject is identified by a 3 figures code (from “001” to “039”). A subject directory includes:
 -  A “XYZ_Mugshots” directory, where XYZ is the subject code. Such directory contains the 28 mugshots of each subject.
 -  A “XYZ_Videos” directory, where XYZ is the subject code. Such directory contains
     - A “XYZ_Video1” directory with the 5 videos of the surveillance cameras and their mosaic.
@@ -78,11 +80,11 @@ The “[original](frmdb/original)” directory includes the database files as th
 -  A “XYZ.jpg” file, which is full HD (1920 x 1080) frontal mugshot (.jpg) taken with a different lighting and camera.
 -  A “XYZ.txt” text file which includes the subject's sex, age, and the accessories worn in the second set of security videos, if available.
 
-For 3 subjects out of 39 i.e., 011, 013, and 029 a second set of 28 mugshots is available in a XYZ_Mugshots_Smiling directory. Such pictures were taken with the subject smiling.
+For 3 subjects out of 39 i.e., 011, 013, and 029 a second set of 28 mugshots is available in a XYZ_Mugshots_Smiling directory. Such pictures were taken with the subject smiling. For the subjects from 040 to 067 the original files are not included (for space reasons) and such original files are available upon request.
 
 The “[cropped](frmdb/cropped)” includes the mugshots and the faces from the frames of the surveillance videos manually cropped for the experiments in the paper.
 -  “[mugshots](frmdb/cropped/mugshots)” includes a “XYZ” directory for each subject, where XYZ is the subject code. Such directory contains the square of the face cropped in each subject's mugshot. The images are PNG, and the filenames are the same used for the original mugshots.
--  “[surveillance](frmdb/cropped/surveillance)” includes a “XYZ” directory for each subject, where XYZ is the subject code. Such directory contains the faces cropped in each subject's videos, from the frames in the “XYZ_Frames” directory. The images are PNG, and the filenames are “Img_01”, “Img_02”, “Img_03”, “Img_04”, and “Img_05”, identifying the surveillance cameras 1, 2, 3, 4, and 5 respectively.
+-  “[surveillance](frmdb/cropped/surveillance)” includes a “XYZ” directory for each subject, where XYZ is the subject code. Such directory contains the faces cropped in each subject's videos, from the frames in the “XYZ_Frames” directory. The images are PNG, and the filenames are “Img_01”, “Img_02”, “Img_03”, “Img_04”, and “Img_05”, identifying the surveillance cameras 1, 2, 3, 4, and 5 respectively. For subjects from 040 to 067 only three frames are available, given that only three cameras were used for recording.
 
 ## Dataset Release Agreement
 
